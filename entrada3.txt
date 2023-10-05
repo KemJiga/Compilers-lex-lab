@@ -1,0 +1,8 @@
+SELECT 'casa' "juan" FROM MYTABLE;
+SELECT "juan""pedro" FROM MYTABLE;
+SELECT "miguel"'mojarras' FROM MYTABLE;
+SELECT " 'juan0' hola 32" FROM MYTABLE;
+SELECT ' "juan0" hola 32' FROM MYTABLE;
+SELECT ' "juan0" hola 32' FROM MYTABLE;
+INSERT INTO '   ;
+INSERT INTO "   ;

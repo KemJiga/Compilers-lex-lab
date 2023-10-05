@@ -1,1 +1,0 @@
-CREATE TABLE Empleado(nombre VARCHAR(20), cedula INTEGER, salario DECIMAL(2));
