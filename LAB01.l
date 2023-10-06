@@ -64,7 +64,7 @@ int find (char *array[], int *size, const char *target) {
 
 [a-zA-Z][_a-zA-Z0-9]*                          {id_count=find(stringArray, &arraySize, yytext);fprintf(yyout, "id%d=%s ", (id_count+1), yytext); error_flag = false;}
 [0-9]+                                         fprintf(yyout, "entero=%s ", yytext); error_flag = false;
-[0-9]+("."|",")[0-9]+                          fprintf(yyout, "decimal=%s ", yytext); error_flag = false;
+[0-9]+(".")[0-9]+                          fprintf(yyout, "decimal=%s ", yytext); error_flag = false;
 [0-9]+[_a-zA-Z0-9]+                            if(!error_flag){fprintf(yyout, "ERROR=%s ", yytext); error_flag = true;} ++error_count;
 
 "+"                                            fprintf(yyout, "op-mas=+ "); error_flag = false;
